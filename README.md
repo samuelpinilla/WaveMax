@@ -156,9 +156,7 @@ Zero-padding the signal before each FrFT (`pad=2`) keeps its time–frequency
 support well inside the fast algorithm's accurate region. The shift then
 changes the AF by only about 1e-10, and the error floor near the truth drops to
 about 5e-8. Padding also changes the transform's time scaling, so it is a
-different (more accurate) measurement model, not a resampling. On that model the
-convex stage currently reaches the polish basin less often (6/12 pulses), so
-`pad=1` stays the default.
+different (more accurate) measurement model, not a resampling.
 
 ## Layout
 
